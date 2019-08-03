@@ -11,17 +11,17 @@ export class BannerComponent implements OnInit, AfterViewInit {
 
   slideItems = [
     {
-      src: '/assets/images/banner2.jpg',
+      src: 'assets/images/banner2.jpg',
       title: 'FXL INTERNATIONAL CONSULTING',
       info: ['您可信賴的', '守護者']
     },
     {
-      src: '/assets/images/banner1.jpg',
+      src: 'assets/images/banner1.jpg',
       title: 'FXL INTERNATIONAL CONSULTING',
       info: ['整合專業', '創新服務']
     },
     {
-      src: '/assets/images/banner3.jpg',
+      src: 'assets/images/banner3.jpg',
       title: 'FXL INTERNATIONAL CONSULTING',
       info: ['多元化顧問團體']
     }

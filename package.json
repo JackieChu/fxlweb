@@ -4,10 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "ng build --prod",
+    "build": "ng build --base-href=https://JackieChu.github.io/fxlweb/",
+    "clean": "rm -rf dist",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "npm run clean && npm run build && ngh -d dist/FxlConsulting"
   },
   "private": true,
   "dependencies": {
