@@ -1,10 +1,9 @@
 .banner-layout {
-  background-image: url('/assets/images/banner.jpg');
+  background-image: url('https://JackieChu.github.io/fxlweb/assets/images/banner.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 592px;
-
 }
 
 .banner {
@@ -25,7 +24,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 
     &.close {
       left: -446px;
@@ -62,7 +61,7 @@
       border: 0;
       padding: 9px 25px;
       cursor: pointer;
-      transition: .3s ease-in-out;
+      transition: 0.3s ease-in-out;
 
       &:hover {
         background-color: rgb(229, 171, 45);
