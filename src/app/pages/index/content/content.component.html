@@ -1,0 +1,54 @@
+<div class="content-layout">
+  <div class="record-layout">
+    <div class="container">
+      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">關於我們</h1>
+      <div class="record-block">
+        <section class="record animatedFadeInUp" animateOnScroll animationName="animated fadeInUp" *ngFor="let item of recordList" [@routerTransition]>
+          <span class="info" [innerHTML]="item.info"></span>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!--業務範圍-->
+  <div class="practices-layout">
+    <div class="practices-block">
+      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">業務範圍</h1>
+      <span class="info animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">。</span>
+      <div class="cont-layout">
+        <section class="block animatedFadeInUp" animateOnScroll animationName="animated fadeInUp" *ngFor="let item of businessList">
+          <img src="{{item.icon}}">
+          <div class="content">
+            <span class="title"> {{item.title}} </span>
+            <span class="cont" style="color: #4c4c4c"> {{item.info}} </span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!--顧問陣容-->
+  <div class="news-layout">
+    <div class="container">
+      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">顧問陣容</h1>
+      <ul class="news-tabs">
+        <li [ngClass]="{ active: tabIndex === 0 }" (click)="changeTab(0)">陣容履歷</li>
+        <li [ngClass]="{ active: tabIndex === 1 }" (click)="changeTab(1)">法律新知</li>
+      </ul>
+      <div class="activity-layout" *ngIf="tabIndex === 1">
+        <div class="activity-block">
+          <span class="title">授獎榮耀</span>
+          <span class="info">蔡玉玲律師于 2019 年 7 月獲 Advisory Excellence 頒發 2019 FinTech Law Expert in Taiwan 獎項。</span>
+        </div>
+      </div>
+      <div class="role-layout" *ngIf="tabIndex === 0">
+        <section class="role-block" *ngFor="let item of roleList">
+          <div class="cont">
+            <span class="title" [innerHTML]="item.title"></span>
+            <span class="info" [innerHTML]="item.info"></span>
+          </div>
+        </section>
+      </div>
+      <div class="buttons animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">
+      </div>
+    </div>
+  </div>
+</div>

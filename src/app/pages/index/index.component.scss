@@ -1,0 +1,11 @@
+.content-layout {
+  margin-top: 100px;
+  background-image: url("/assets/images/IMG_2343.jpeg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  @media only screen and (max-width: 680px) {
+    margin-top: 60px;
+  }
+}

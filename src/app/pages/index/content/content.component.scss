@@ -1,0 +1,442 @@
+.content-layout {
+
+  .record-layout {
+    background-color: #132540;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (max-width: 1239px) and (min-width: 960px) {
+        max-width: 940px;
+      }
+
+      @media only screen and (max-width: 959px) and (min-width: 768px) {
+        max-width: 708px;
+      }
+
+      h1 {
+        margin: 0;
+        color: #ffffff;
+        font-size: 50px;
+        line-height: 55px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        margin-bottom: 65px;
+      }
+
+      .record-block {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media only screen and (max-width: 767px) {
+          flex-direction: column;
+        }
+
+        .record {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 40px;
+
+          @media only screen and (max-width: 767px) {
+            width: 100%;
+          }
+
+          img {
+            max-width: 100%;
+            padding-top: 5px;
+            margin-bottom: 25px;
+          }
+
+          .info {
+            color: #fff;
+            text-align: left;
+            font-size: 16px;
+            line-height: 54px;
+            font-weight: 400;
+            letter-spacing: 0px;
+          }
+        }
+      }
+
+      button {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 700;
+        color: white;
+        background-color: rgb(229, 189, 102);
+        border: 0;
+        padding: 11px 20px;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+
+        &:hover {
+          background-color: rgb(229, 171, 45);
+        }
+      }
+    }
+  }
+
+  .news-layout {
+    background-color: #f2f3f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (max-width: 1239px) and (min-width: 960px) {
+        max-width: 940px;
+      }
+
+      @media only screen and (max-width: 959px) and (min-width: 768px) {
+        max-width: 708px;
+      }
+
+      h1 {
+        margin: 0;
+        color: #132541;
+        font-size: 50px;
+        line-height: 55px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        margin-bottom: 65px;
+      }
+
+      .news-tabs {
+        width: 100%;
+        border-bottom: 1px solid #00000014;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+          font-size: 16px;
+          font-weight: 400;
+          padding: 14px 30px !important;
+          cursor: pointer;
+
+          &.active {
+            color: #cca353;
+            border-bottom: 1px solid #cca353;
+          }
+        }
+      }
+
+      .activity-layout {
+        width: 100%;
+        height: 410px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .activity-block {
+          min-height: 278px;
+          min-width: 671px;
+          max-height: 278px;
+          max-width: 671px;
+          background-color: rgba(0, 0, 0, 0);
+          border-color: #cca353;
+          border-style: solid;
+          border-width: 2px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+
+          @media only screen and (max-width: 1239px) and (min-width: 960px) {
+            min-height: 204px;
+            min-width: 494px;
+            max-height: 204px;
+            max-width: 494px;
+          }
+
+          @media only screen and (max-width: 959px) and (min-width: 768px) {
+            min-height: 144px;
+            min-width: 347px;
+            max-height: 144px;
+            max-width: 347px;
+          }
+
+          @media only screen and (max-width: 767px) {
+            min-height: 133px;
+            min-width: 323px;
+            max-height: 133px;
+            max-width: 323px;
+          }
+
+          .title {
+            font-size: 31px;
+            line-height: 19px;
+            font-weight: 400;
+            color: rgb(19, 37, 65);
+
+            @media only screen and (max-width: 1239px) and (min-width: 960px) {
+              font-size: 23px;
+              line-height: 14px;
+            }
+
+            @media only screen and (max-width: 959px) and (min-width: 768px) {
+              font-size: 16px;
+              line-height: 10px;
+            }
+
+            @media only screen and (max-width: 767px) {
+              font-size: 16px;
+              line-height: 9px;
+            }
+          }
+
+          .info {
+            text-align: center;
+            min-width: 401px;
+            max-width: 401px;
+            font-size: 15px;
+            line-height: 21px;
+            font-weight: 400;
+            color: #cca353;
+
+            @media only screen and (max-width: 1239px) and (min-width: 960px) {
+              min-width: 296px;
+              max-width: 296px;
+            }
+
+            @media only screen and (max-width: 959px) and (min-width: 768px) {
+              min-width: 208px;
+              max-width: 208px;
+            }
+
+            @media only screen and (max-width: 767px) {
+              min-width: 202px;
+              max-width: 202px;
+            }
+          }
+        }
+      }
+
+      .role-layout {
+        width: 100%;
+        padding: 15px 20px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        @media only screen and (max-width: 768px) {
+          flex-direction: column;
+        }
+
+        .role-block {
+          background-color: #fff;
+          width: calc((100% / 4) - 40px);
+          margin: 10px 20px;
+
+          @media only screen and (max-width: 960px) {
+            width: calc((100% / 3) - 40px);
+          }
+
+          @media only screen and (max-width: 768px) {
+            width: 100%;
+            margin: 10px 0;
+          }
+
+          .cont {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+            .title {
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 24px;
+              margin-bottom: 15px;
+              text-decoration: underline;
+            }
+
+            .info {
+              color: #696969;
+            }
+          }
+
+          .foot {
+            background: rgba(0, 0, 0, 0.02);
+            padding: 7px 15px;
+            overflow: hidden;
+            line-height: 30px;
+            color: #a8a8a8;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .foot-cont {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-left: 1px solid #00000014;
+              padding-left: 10px;
+
+              span {
+                cursor: pointer;
+                color: #cca353;
+
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          font-size: 12px;
+          line-height: 14px;
+          font-weight: 700;
+          border: 0;
+          padding: 11px 20px;
+          margin-bottom: 15px;
+          margin-right: 7px;
+          cursor: pointer;
+          transition: .3s ease-in-out;
+
+          &.activity {
+            color: #060a13;
+            background-color: #dcdde0;
+          }
+
+          &.role {
+            color: white;
+            background-color: rgb(229, 189, 102);
+          }
+        }
+      }
+    }
+  }
+
+  .practices-layout {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .practices-block {
+      max-width: 1220px;
+      width: calc(100% - 80px);
+      padding: 60px 0 30px 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media only screen and (max-width: 1239px) and (min-width: 960px) {
+        max-width: 940px;
+      }
+
+      @media only screen and (max-width: 959px) and (min-width: 768px) {
+        max-width: 708px;
+      }
+
+      h1 {
+        margin: 0;
+        color: #132541;
+        font-size: 50px;
+        line-height: 55px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        margin-bottom: 45px;
+
+        @media only screen and (max-width: 959px) and (min-width: 768px) {
+          font-size: 43px;
+          line-height: 47px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          font-size: 24px !important;
+        }
+      }
+
+      .info {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        margin-bottom: 15px;
+        color: #4c4c4c;
+        width: 58%;
+
+        @media only screen and (max-width: 768px) {
+          width: 90%;
+        }
+      }
+
+      .cont-layout {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        @media only screen and (max-width: 768px) {
+          flex-direction: column;
+        }
+
+        .block {
+          display: flex;
+          -webkit-box-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          align-items: flex-start;
+          width: calc((100% / 3) - 80px);
+          padding: 40px;
+
+          @media only screen and (max-width: 1239px) {
+            width: calc((100% / 3) - 20px);
+            padding: 10px;
+          }
+
+          @media only screen and (max-width: 768px) {
+            width: 100%;
+          }
+
+          @media only screen and (max-width: 450px) {
+            width: calc(100% - 20px);
+            justify-content: flex-start;
+          }
+
+          .content {
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+
+            .title {
+              font-size: 22px;
+              line-height: 26px;
+              font-weight: 700;
+              letter-spacing: 0px;
+              margin-bottom: 15px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
