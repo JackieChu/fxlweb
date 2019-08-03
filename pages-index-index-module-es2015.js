@@ -461,7 +461,7 @@ let BannerComponent = class BannerComponent {
         Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["fromEvent"])(ngxSlider, 'mouseleave')
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeUntil"])(this.destroy$))
             .subscribe(() => (isHover = false));
-        Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["interval"])(3000)
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["interval"])(1000)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeUntil"])(this.destroy$))
             .subscribe(() => {
             if (!isHover) {
