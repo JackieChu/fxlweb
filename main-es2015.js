@@ -42,7 +42,7 @@ module.exports = webpackAsyncContext;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>\n"
+module.exports = "<router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
@@ -231,7 +231,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/lucifer/Desktop/LightUp/專案/FxlConsulting/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\LightUp\fxlweb\src\main.ts */"./src/main.ts");
 
 
 /***/ })
