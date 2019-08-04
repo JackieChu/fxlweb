@@ -36,6 +36,7 @@ li {
 
 .slide {
   margin: 0 !important;
+  background-size: cover !important;
 }
 
 .animated {
