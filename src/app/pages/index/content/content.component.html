@@ -57,6 +57,16 @@
           </div>
         </section>
       </div>
+      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">合作夥伴</h1>
+      <ul class="news-tabs"></ul>
+      <div class="role-layout" *ngIf="tabIndex === 0">
+          <section class="role-block" *ngFor="let item of helpmateList">
+            <div class="cont">
+              <span class="title" [innerHTML]="item.title"></span>
+              <span class="info" [innerHTML]="item.info"></span>
+            </div>
+          </section>
+        </div>
       <div class="buttons animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">
       </div>
     </div>
