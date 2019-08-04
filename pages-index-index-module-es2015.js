@@ -348,7 +348,7 @@ module.exports = "<div class=\"content-layout\">\n  <div class=\"record-layout\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"footer-layout\">\n  <div class=\"content\">\n    <div class=\"container\">\n      <section class=\"block\">\n        <span class=\"info\">\n          <span>Mobile: 886.968-583-768</span>\n          <span>Tax ID: 5095-2670</span>\n          <span>E-mail: fxlconsulting@gmail.com</span>\n        </span>\n      </section>\n    </div>\n  </div>\n  <div class=\"copy\">\n    <div class=\"container\">\n      <span>\n        <span>\n            ©2019 FXL INTERNATIONAL CONSULTING.\n        </span>\n        <span>\n            福軒萊國際顧問管理有限公司\n        </span>\n      </span>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"footer-layout\">\n  <div class=\"content\">\n    <div class=\"container\">\n      <section class=\"block\">\n        <span class=\"info\">\n          <span>Mobile: 886.968-583-768</span>\n          <span>Tax ID: 5095-2670</span>\n          <span>E-mail: <a href=\"mailto:fxlconsulting@gmail.com\" style=\"color: #ffff\">fxlconsulting@gmail.com</a></span>\n        </span>\n      </section>\n    </div>\n  </div>\n  <div class=\"copy\">\n    <div class=\"container\">\n      <span>\n        <span>\n            ©2019 FXL INTERNATIONAL CONSULTING.\n        </span>\n        <span>\n            福軒萊國際顧問管理有限公司\n        </span>\n      </span>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
