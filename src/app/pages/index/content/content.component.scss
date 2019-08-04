@@ -1,6 +1,6 @@
 .content-layout {
   .record-layout {
-    background-color: #132540;
+    background-color: #262626;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@
 
     h1 {
       margin: 0;
-      color: #132541;
+      color: #262626;
       font-size: 24px;
       line-height: 55px;
       font-weight: 700;
@@ -117,11 +117,12 @@
     }
 
     .news-tabs {
-      width: 100%;
+      width: 44%;
       border-bottom: 1px solid #00000014;
       display: flex;
       justify-content: center;
       align-items: center;
+
 
       li {
         font-size: 16px;
@@ -228,7 +229,7 @@
     }
 
     .role-layout {
-      width: 100%;
+      width: 44%;
       padding: 15px 20px 20px;
       display: flex;
       flex-wrap: wrap;
@@ -236,6 +237,7 @@
 
       @media only screen and (max-width: 768px) {
         flex-direction: column;
+        width: 138%;
       }
 
       .role-block {
@@ -358,7 +360,7 @@
 
     h1 {
       margin: 0;
-      color: #132541;
+      color: #262626;
       font-size: 24px;
       line-height: 55px;
       font-weight: 700;
@@ -399,6 +401,7 @@
         flex-direction: column;
         width: 100%;
         padding: 0;
+        margin-left: 35px;
       }
 
       .block {
