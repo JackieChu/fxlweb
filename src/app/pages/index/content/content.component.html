@@ -13,7 +13,7 @@
   <div class="practices-layout">
     <div class="practices-block">
       <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">業務範圍</h1>
-      <span class="info animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">。</span>
+      <span class="info animatedFadeInUp" animateOnScroll animationName="animated fadeInUp"></span>
       <div class="cont-layout">
         <section class="block animatedFadeInUp" animateOnScroll animationName="animated fadeInUp" *ngFor="let item of businessList">
           <img src="{{item.icon}}">
@@ -30,13 +30,23 @@
     <div class="container">
       <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">顧問陣容</h1>
       <ul class="news-tabs">
-        <li [ngClass]="{ active: tabIndex === 0 }" (click)="changeTab(0)">陣容履歷</li>
-        <li [ngClass]="{ active: tabIndex === 1 }" (click)="changeTab(1)">法律新知</li>
+        <!--<li [ngClass]="{ active: tabIndex === 0 }" (click)="changeTab(0)">陣容履歷</li>
+        <li [ngClass]="{ active: tabIndex === 1 }" (click)="changeTab(1)">服務對象</li>-->
       </ul>
       <div class="activity-layout" *ngIf="tabIndex === 1">
         <div class="activity-block">
-          <span class="title">授獎榮耀</span>
-          <span class="info">蔡玉玲律師于 2019 年 7 月獲 Advisory Excellence 頒發 2019 FinTech Law Expert in Taiwan 獎項。</span>
+          <span class="title">我們的服務對象</span>
+          <span class="info">
+            <ol style="list-style-type:disc">
+              <li>▲ 準備設立公司者</li>
+              <li>▲ 經營管理者</li>
+              <li>▲ 有交易對象者</li>
+              <li>▲ 與政府部門交涉者</li>
+              <li>▲ 投資大陸及涉大陸法律事務</li>
+              <li>▲ 企業轉型</li>
+              <li>▲ 正臨各類營運疑難雜症者</li>
+            </ol>
+          </span>
         </div>
       </div>
       <div class="role-layout" *ngIf="tabIndex === 0">

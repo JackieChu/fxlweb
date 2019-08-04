@@ -7,11 +7,11 @@
 }
 
 .banner {
-  height: 592px;
+  height: 630px;
   position: relative;
 
   .banner-info {
-    min-height: 432px;
+    min-height: 470px;
     min-width: 286px;
     max-height: 150px;
     max-width: 286px;
@@ -34,6 +34,22 @@
       background-color: rgba(255, 255, 255, 0.45);
       min-width: calc(50% - 400px);
       width: 100px;
+
+      .title {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+        color: rgb(19, 37, 65);
+      }
+
+      .cont {
+        display: flex;
+        flex-direction: column;
+        font-size: 23px !important;
+        line-height: 49px;
+        font-weight: 700;
+        color: rgb(19, 37, 65);
+      }
     }
 
     .title {

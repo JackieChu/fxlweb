@@ -17,7 +17,7 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
     {
       src: 'assets/images/banner2.jpg',
       title: 'FXL INTERNATIONAL CONSULTING',
-      info: ['您可信賴的', '守護者'],
+      info: ['您可信賴', '的守護者'],
     },
     {
       src: 'assets/images/banner1.jpg',
