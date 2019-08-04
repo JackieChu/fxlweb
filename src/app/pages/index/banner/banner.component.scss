@@ -1,5 +1,5 @@
 .banner-layout {
-  background-image: url('https://JackieChu.github.io/fxlweb/assets/images/banner.jpg');
+  background-image: url("https://JackieChu.github.io/fxlweb/assets/images/banner.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -10,6 +10,9 @@
   height: 630px;
   position: relative;
 
+  @media only screen and (max-width: 446px) {
+    height: 416px;
+  }
   .banner-info {
     min-height: 470px;
     min-width: 286px;
@@ -18,7 +21,7 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     padding: 80px;
     position: absolute;
@@ -34,6 +37,7 @@
       background-color: rgba(255, 255, 255, 0.45);
       min-width: calc(50% - 400px);
       width: 100px;
+      min-height: calc(416px - 160px);
 
       .title {
         font-size: 12px;
@@ -57,6 +61,7 @@
       line-height: 20px;
       font-weight: 400;
       color: rgb(19, 37, 65);
+      margin-bottom: 3rem;
     }
 
     .cont {
