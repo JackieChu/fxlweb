@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { Slider } from 'ngx-slider';
 import { fromEvent, interval, Subject } from 'rxjs';
-import { takeUntil } from 'rxjs/operators';
+import { mergeMap, startWith, takeUntil, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-banner',
@@ -64,29 +64,31 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
 
   autoPlay() {
     const ngxSlider = document.getElementsByTagName('ngx-slider')[0];
-    let isHover = false;
 
-    fromEvent(ngxSlider, 'mouseenter')
-      .pipe(takeUntil(this.destroy$))
-      .subscribe(() => (isHover = true));
+    const enter$ = fromEvent(ngxSlider, 'mouseenter');
+    const leave$ = fromEvent(ngxSlider, 'mouseleave');
 
-    fromEvent(ngxSlider, 'mouseleave')
-      .pipe(takeUntil(this.destroy$))
-      .subscribe(() => (isHover = false));
-
-    interval(3000)
-      .pipe(takeUntil(this.destroy$))
-      .subscribe(() => {
-        if (!isHover) {
-          if (++this.bannerIndex === this.slideItems.length) {
-            this.bannerIndex = 0;
-          }
-          this.dots[this.bannerIndex].click();
-        }
-      });
+    leave$
+      .pipe(
+        startWith(null),
+        mergeMap(() =>
+          interval(3000).pipe(
+            tap(() => {
+              if (++this.bannerIndex === this.slideItems.length) {
+                this.bannerIndex = 0;
+              }
+              this.dots[this.bannerIndex].click();
+            }),
+            takeUntil(enter$),
+          ),
+        ),
+        takeUntil(this.destroy$),
+      )
+      .subscribe();
   }
 
   ngOnDestroy() {
     this.destroy$.next();
+    this.destroy$.complete();
   }
 }
