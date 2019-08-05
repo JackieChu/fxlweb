@@ -1,7 +1,7 @@
 <div class="content-layout">
   <div class="record-layout">
     <div class="container">
-      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">關於我們</h1>
+      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">{{ '關於我們' | translate }}</h1>
       <div class="record-block">
         <section class="record animatedFadeInUp" animateOnScroll animationName="animated fadeInUp" *ngFor="let item of recordList" [@routerTransition]>
           <span class="info" [innerHTML]="item.info"></span>
@@ -18,8 +18,8 @@
         <section class="block animatedFadeInUp" animateOnScroll animationName="animated fadeInUp" *ngFor="let item of businessList">
           <img src="{{item.icon}}">
           <div class="content">
-            <span class="title"> {{item.title}} </span>
-            <span class="cont" style="color: #4c4c4c"> {{item.info}} </span>
+            <span class="title"> {{ item.title | translate }} </span>
+            <span class="cont" style="color: #4c4c4c"> {{ item.info | translate }} </span>
           </div>
         </section>
       </div>
