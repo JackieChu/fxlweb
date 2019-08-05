@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { FlickityModule } from 'ngx-flickity';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
+    FlickityModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,10 @@
-<div class="banner">
-  <ngx-slider [init]="slider"></ngx-slider>
-  <div class="banner-info" [ngClass]="{ close: infoClose }">
-    <span class="title">{{ slideItems[bannerIndex].title }}</span>
-    <span class="cont">
-      <span *ngFor="let item of slideItems[bannerIndex].info">{{ item }}</span>
-    </span>
+<div class="banner-layout" [flickity]="config"(slideSelect)="onSelect($event)">
+  <div class="banner" *ngFor="let item of slideItems; let index = index" [ngStyle]="{ 'background-image': 'url(' + item.src + ')' }">
+    <div class="banner-info" [ngClass]="{ close: infoClose && selectIndex === index }">
+      <span class="title">{{ item.title }}</span>
+      <span class="cont">
+        <span *ngFor="let item of item.info">{{ item }}</span>
+      </span>
+    </div>
   </div>
 </div>

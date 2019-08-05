@@ -1,18 +1,11 @@
-import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
-import { Slider } from 'ngx-slider';
-import { fromEvent, interval, Subject } from 'rxjs';
-import { mergeMap, startWith, takeUntil, tap } from 'rxjs/operators';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.scss'],
 })
-export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
-  private dots: any[];
-  private destroy$ = new Subject();
-  public slider = new Slider();
-
+export class BannerComponent implements OnInit {
   slideItems = [
     {
       src: 'assets/images/banner2.jpg',
@@ -28,67 +21,30 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
       src: 'assets/images/banner3.jpg',
       title: 'FXL INTERNATIONAL CONSULTING',
       info: ['多元化顧問團體'],
-    },
+    }
   ];
-  bannerIndex = 0;
+
+  config = {
+    wrapAround: true,
+    prevNextButtons: false,
+    autoPlay: 3000
+  };
+
   infoClose = false;
 
+  selectIndex = 0;
+
   constructor() {
-    this.slider.config.loop = true;
-    this.slider.config.showPreview = false;
-    this.slider.config.showTitle = false;
-    this.slider.config.showNavigator = false;
   }
 
   ngOnInit() {
-    this.slider.items = this.slideItems;
   }
 
-  ngAfterViewInit() {
-    this.dots = [...(document.getElementsByClassName('dots') as any)];
-    this.bindDotsEvent();
-    this.autoPlay();
-  }
-
-  bindDotsEvent() {
-    this.dots.forEach((dot, i) => {
-      dot.addEventListener('click', () => {
-        this.infoClose = true;
-        setTimeout(() => {
-          this.bannerIndex = i;
-          this.infoClose = false;
-        }, 30);
-      });
-    });
-  }
-
-  autoPlay() {
-    const ngxSlider = document.getElementsByTagName('ngx-slider')[0];
-
-    const enter$ = fromEvent(ngxSlider, 'mouseenter');
-    const leave$ = fromEvent(ngxSlider, 'mouseleave');
-
-    leave$
-      .pipe(
-        startWith(null),
-        mergeMap(() =>
-          interval(3000).pipe(
-            tap(() => {
-              if (++this.bannerIndex === this.slideItems.length) {
-                this.bannerIndex = 0;
-              }
-              this.dots[this.bannerIndex].click();
-            }),
-            takeUntil(enter$),
-          ),
-        ),
-        takeUntil(this.destroy$),
-      )
-      .subscribe();
-  }
-
-  ngOnDestroy() {
-    this.destroy$.next();
-    this.destroy$.complete();
+  onSelect($event) {
+    this.selectIndex = $event;
+    this.infoClose = true;
+    setTimeout(() => {
+      this.infoClose = false;
+    }, 500);
   }
 }

@@ -1,93 +1,109 @@
 .banner-layout {
-  background-image: url("https://jackie.github.io/fxlweb/assets/images/banner.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 592px;
-}
 
-.banner {
-  height: 630px;
-  position: relative;
-
-  @media only screen and (max-width: 446px) {
-    height: 416px;
-  }
-  .banner-info {
-    min-height: 470px;
-    min-width: 286px;
-    max-height: 150px;
-    max-width: 286px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 80px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: 0.3s ease-in-out;
-
-    &.close {
-      left: -446px;
-    }
+  .banner {
+    // background-image: url("https://jackie.github.io/fxlweb/assets/images/banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 630px;
+    width: 100vw;
+    position: relative;
 
     @media only screen and (max-width: 446px) {
-      background-color: rgba(255, 255, 255, 0.45);
-      min-width: calc(50% - 400px);
-      width: 100px;
-      min-height: calc(416px - 160px);
-      padding: 80px 40px;
+      height: 416px;
+    }
+
+    .banner-info {
+      min-height: 470px;
+      min-width: 286px;
+      max-height: 150px;
+      max-width: 286px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 80px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: 0.3s ease-in-out;
+      opacity: 1;
+
+      &.close {
+        left: -416px;
+        opacity: 0;
+
+        @media only screen and (max-width: 446px) {
+          height: 416px;
+        }
+      }
+
+      @media only screen and (max-width: 446px) {
+        background-color: rgba(255, 255, 255, 0.45);
+        min-width: calc(50% - 400px);
+        width: 100px;
+        min-height: calc(416px - 160px);
+        padding: 80px 40px;
+
+        .title {
+          font-size: 12px;
+          line-height: 20px;
+          font-weight: 400;
+          color: rgb(19, 37, 65);
+        }
+
+        .cont {
+          display: flex;
+          flex-direction: column;
+          font-size: 23px !important;
+          line-height: 49px;
+          font-weight: 700;
+          color: rgb(19, 37, 65);
+        }
+      }
 
       .title {
-        font-size: 12px;
+        font-size: 13px;
         line-height: 20px;
         font-weight: 400;
         color: rgb(19, 37, 65);
+        margin-bottom: 3rem;
       }
 
       .cont {
         display: flex;
         flex-direction: column;
-        font-size: 23px !important;
+        font-size: 39px;
         line-height: 49px;
         font-weight: 700;
         color: rgb(19, 37, 65);
       }
-    }
 
-    .title {
-      font-size: 13px;
-      line-height: 20px;
-      font-weight: 400;
-      color: rgb(19, 37, 65);
-      margin-bottom: 3rem;
-    }
+      button {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 700;
+        color: white;
+        background-color: rgb(229, 189, 102);
+        border: 0;
+        padding: 9px 25px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
 
-    .cont {
-      display: flex;
-      flex-direction: column;
-      font-size: 39px;
-      line-height: 49px;
-      font-weight: 700;
-      color: rgb(19, 37, 65);
-    }
-
-    button {
-      font-size: 12px;
-      line-height: 14px;
-      font-weight: 700;
-      color: white;
-      background-color: rgb(229, 189, 102);
-      border: 0;
-      padding: 9px 25px;
-      cursor: pointer;
-      transition: 0.3s ease-in-out;
-
-      &:hover {
-        background-color: rgb(229, 171, 45);
+        &:hover {
+          background-color: rgb(229, 171, 45);
+        }
       }
     }
   }
 }
+
+// .banner {
+//   height: 630px;
+//   position: relative;
+
+//   @media only screen and (max-width: 446px) {
+//     height: 416px;
+//   }
+// }
