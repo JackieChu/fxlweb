@@ -140,7 +140,7 @@ export class ContentComponent implements OnInit {
 
       <li>中華人民共和國法律執業資格</li>
 
-      <li>上上海福一律師事務所 高級合夥人、主任</li>
+      <li>上海福一律師事務所 高級合夥人、主任</li>
 
       <li>上海法學會海商法研究會 理事</li>
 
