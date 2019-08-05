@@ -1,10 +1,6 @@
 .content-layout {
   margin-top: 100px;
-  background-image: url("https://jackiechu.github.io/fxlweb/assets/images/IMG_2406.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: cover;
+
   @media only screen and (max-width: 680px) {
     margin-top: 60px;
   }
