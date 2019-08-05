@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "ng build --base-href=https://JackieChu.github.io/fxlweb/",
+    "build": "ng build --base-href=http://fxl-consulting.com/",
     "clean": "rm -rf dist",
     "test": "ng test",
     "lint": "ng lint",
