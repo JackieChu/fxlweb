@@ -29501,6 +29501,9 @@ var BannerComponent = /** @class */ (function () {
         this.config = {
             wrapAround: true,
             prevNextButtons: false,
+            lazyLoad: false,
+            percentPosition: false,
+            resize: false,
             autoPlay: 3000
         };
         this.infoClose = false;
