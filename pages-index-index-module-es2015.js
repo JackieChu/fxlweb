@@ -25695,7 +25695,7 @@ module.exports = "<div class=\"footer-layout\">\n  <div class=\"content\">\n    
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"header-layout\">\n  <div class=\"header-logo\">\n    <img src=\"assets/images/logo.png\" width=\"237px\">\n  </div>\n  <div>\n    <!-- <select (change)=\"selected($event)\">\n      <option value=\"zh\">中文</option>\n      <option value=\"en\">英文</option>\n    </select> -->\n    <button mat-button [matMenuTriggerFor]=\"menu\">語系</button>\n    <mat-menu #menu=\"matMenu\">\n      <button mat-menu-item *ngFor=\"let lang of langList\" [value]=\"lang.value\" (click)=\"selected(lang)\">{{ lang.title }}</button>\n    </mat-menu>\n  </div>\n  <!-- <ul class=\"header-menu\">\n    <li *ngFor=\"let item of menu\">{{ item.name }}</li>\n  </ul> -->\n</div>\n"
+module.exports = "<div class=\"header-layout\">\n  <div class=\"header-logo\">\n    <img src=\"assets/images/logo.png\" width=\"237px\">\n  </div>\n  <div>\n    <!-- <select (change)=\"selected($event)\">\n      <option value=\"zh\">中文</option>\n      <option value=\"en\">英文</option>\n    </select> -->\n    \b<!--<button mat-button [matMenuTriggerFor]=\"menu\">語系</button>-->\n    <mat-menu #menu=\"matMenu\">\n      <button mat-menu-item *ngFor=\"let lang of langList\" [value]=\"lang.value\" (click)=\"selected(lang)\">{{ lang.title }}</button>\n    </mat-menu>\n  </div>\n  <!-- <ul class=\"header-menu\">\n    <li *ngFor=\"let item of menu\">{{ item.name }}</li>\n  </ul> -->\n</div>\n"
 
 /***/ }),
 
