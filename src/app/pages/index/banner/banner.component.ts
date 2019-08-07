@@ -27,6 +27,9 @@ export class BannerComponent implements OnInit {
   config = {
     wrapAround: true,
     prevNextButtons: false,
+    lazyLoad: false,
+    percentPosition: false,
+    resize: false,
     autoPlay: 3000
   };
 
