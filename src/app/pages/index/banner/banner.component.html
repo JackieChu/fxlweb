@@ -1,9 +1,9 @@
 <div class="banner-layout" [flickity]="config"(slideSelect)="onSelect($event)">
   <div class="banner" *ngFor="let item of slideItems; let index = index" [ngStyle]="{ 'background-image': 'url(' + item.src + ')' }">
     <div class="banner-info" [ngClass]="{ close: infoClose && selectIndex === index }">
-      <span class="title">{{ item.title }}</span>
+      <span class="title">{{ item.title | translate}}</span>
       <span class="cont">
-        <span *ngFor="let item of item.info">{{ item }}</span>
+        <span *ngFor="let item of item.info">{{ item | translate}}</span>
       </span>
     </div>
   </div>

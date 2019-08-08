@@ -20,7 +20,7 @@ export class BannerComponent implements OnInit {
     {
       src: 'assets/images/banner3.jpg',
       title: 'FXL INTERNATIONAL CONSULTING',
-      info: ['多元化顧問團體'],
+      info: ['多元化', '顧問團體'],
     }
   ];
 
@@ -29,7 +29,7 @@ export class BannerComponent implements OnInit {
     prevNextButtons: false,
     lazyLoad: false,
     percentPosition: false,
-    resize: false,
+    resize: true,
     autoPlay: 3000
   };
 

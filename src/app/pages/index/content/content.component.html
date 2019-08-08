@@ -4,7 +4,7 @@
       <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">{{ '關於我們' | translate }}</h1>
       <div class="record-block">
         <section class="record animatedFadeInUp" animateOnScroll animationName="animated fadeInUp" *ngFor="let item of recordList" [@routerTransition]>
-          <span class="info" [innerHTML]="item.info"></span>
+          <span class="info" [innerHTML]="item.info | translate"></span>
         </section>
       </div>
     </div>
@@ -12,7 +12,7 @@
   <!--業務範圍-->
   <div class="practices-layout">
     <div class="practices-block">
-      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">業務範圍</h1>
+      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">{{'業務範圍' | translate}}</h1>
       <span class="info animatedFadeInUp" animateOnScroll animationName="animated fadeInUp"></span>
       <div class="cont-layout">
         <section class="block animatedFadeInUp" animateOnScroll animationName="animated fadeInUp" *ngFor="let item of businessList">
@@ -28,7 +28,7 @@
   <!--顧問陣容-->
   <div class="news-layout">
     <div class="container">
-      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">顧問陣容</h1>
+      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">{{'顧問陣容' | translate}}</h1>
       <ul class="news-tabs">
         <!--<li [ngClass]="{ active: tabIndex === 0 }" (click)="changeTab(0)">陣容履歷</li>
         <li [ngClass]="{ active: tabIndex === 1 }" (click)="changeTab(1)">服務對象</li>-->
@@ -52,18 +52,18 @@
       <div class="role-layout" *ngIf="tabIndex === 0">
         <section class="role-block" *ngFor="let item of roleList">
           <div class="cont">
-            <span class="title" [innerHTML]="item.title"></span>
-            <span class="info" [innerHTML]="item.info"></span>
+            <span class="title" [innerHTML]="item.title | translate"></span>
+            <span class="info" [innerHTML]="item.info | translate"></span>
           </div>
         </section>
       </div>
-      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">合作夥伴</h1>
+      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">{{'合作夥伴' | translate}}</h1>
       <ul class="news-tabs"></ul>
       <div class="role-layout" *ngIf="tabIndex === 0">
           <section class="role-block" *ngFor="let item of helpmateList">
             <div class="cont">
-              <span class="title" [innerHTML]="item.title"></span>
-              <span class="info" [innerHTML]="item.info"></span>
+              <span class="title" [innerHTML]="item.title | translate"></span>
+              <span class="info" [innerHTML]="item.info | translate"></span>
             </div>
           </section>
         </div>

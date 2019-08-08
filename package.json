@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "ng build --base-href=http://fxl-consulting.com/",
+    "build": "ng build --base-href=/",
     "clean": "rm -rf dist",
     "test": "ng test",
     "lint": "ng lint",
@@ -30,6 +30,7 @@
     "hammerjs": "^2.0.8",
     "ng2-animate-on-scroll": "^1.1.0",
     "ngx-flickity": "0.0.9",
+    "npm": "^6.10.3",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"

@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
 
   langList = [
     { title: '中文', value: 'zh' },
-    { title: '英文', value: 'en' }
+    { title: 'Englis', value: 'en' }
   ];
 
   constructor(private translate: TranslateService) { }
