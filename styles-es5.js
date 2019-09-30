@@ -639,9 +639,9 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/lucifer/Desktop/LightUp/專案/FxlConsulting/node_modules/@angular/material/prebuilt-themes/indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
-__webpack_require__(/*! /Users/lucifer/Desktop/LightUp/專案/FxlConsulting/src/styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! /Users/lucifer/Desktop/LightUp/專案/FxlConsulting/node_modules/font-awesome/css/font-awesome.min.css */"./node_modules/font-awesome/css/font-awesome.min.css");
+__webpack_require__(/*! /Users/lucifer/Desktop/ZGMF-X20A/專案/FxlConsulting/node_modules/@angular/material/prebuilt-themes/indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+__webpack_require__(/*! /Users/lucifer/Desktop/ZGMF-X20A/專案/FxlConsulting/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /Users/lucifer/Desktop/ZGMF-X20A/專案/FxlConsulting/node_modules/font-awesome/css/font-awesome.min.css */"./node_modules/font-awesome/css/font-awesome.min.css");
 
 
 /***/ })

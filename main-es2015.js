@@ -263,7 +263,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/lucifer/Desktop/LightUp/專案/FxlConsulting/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/lucifer/Desktop/ZGMF-X20A/專案/FxlConsulting/src/main.ts */"./src/main.ts");
 
 
 /***/ })
