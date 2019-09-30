@@ -41,10 +41,10 @@ export class ContentComponent implements OnInit {
       title: '鄭幸萊title',
       info: '鄭幸萊履歷'
     },
-    {
-      title: 'Joytitle',
-      info: 'Joy履歷'
-    },
+    // {
+    //   title: 'Joytitle',
+    //   info: 'Joy履歷'
+    // },
     {
       title: '黃玟錡title',
       info: '黃玟錡履歷'

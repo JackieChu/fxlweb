@@ -8,18 +8,20 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
 
-  menu = [
-    { name: '首頁' },
-    { name: '關於我們' },
-    { name: '最新消息' },
-    { name: '獲獎紀錄' },
-    { name: '專業領域' },
-    { name: '專業律師群' },
-    { name: '人事募集' },
-    { name: '理慈據點' },
-    { name: '社群' },
-    { name: '繁體中文' }
+  menulist = [
+    { name: '語系｜Languages'}
   ];
+
+  // { name: '首頁',
+  //     url: 'index'},
+  //   { name: '關於我們',
+  //     url: 'about' },
+  //   { name: '最新消息',
+  //     url: 'nes'},
+  //   { name: '業務範圍',
+  //     url: 'services' },
+  //   { name: '顧問陣容',
+  //     url: 'teams' },
 
   langList = [
     { title: '中文', value: 'zh' },

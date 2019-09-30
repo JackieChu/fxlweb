@@ -9,17 +9,61 @@
       </div>
     </div>
   </div>
-  <!--業務範圍-->
+  <!--最新消息-->
   <div class="practices-layout">
     <div class="practices-block">
-      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">{{'業務範圍' | translate}}</h1>
+      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">{{'最新消息' | translate}}</h1>
       <span class="info animatedFadeInUp" animateOnScroll animationName="animated fadeInUp"></span>
       <div class="cont-layout">
-        <section class="block animatedFadeInUp" animateOnScroll animationName="animated fadeInUp" *ngFor="let item of businessList">
-          <img src="{{item.icon}}">
+        <section class="block animatedFadeInUp" animateOnScroll animationName="animated fadeInUp" >
           <div class="content">
-            <span class="title"> {{ item.title | translate }} </span>
-            <span class="cont" style="color: #4c4c4c"> {{ item.info | translate }} </span>
+            <div class="title">海外資金匯回台灣投資減稅攻略</div>
+            <div class="time" style="padding: 10px;">2019/9/30</div>
+            <div></div>
+            <div class="cont" style="color: #4c4c4c">因應中美貿戰，企業資金傾向回流，台灣親年8月開始實行之「境外資金匯回管理運用及課稅條例」，政府祭出極佳優惠稅率並搭配相關獎勵措施以吸引台商資金回流，退稅後稅率最低可達4%，條例重點整理如下表：<br>
+              <table border="1">
+                  　<tr>
+                  　<td colspan="2">境外資金匯回條例重點</td>
+                  　</tr>
+                  　<tr>
+                  　<td>適用範圍</td>
+                  　<td>
+                      1.	個人自境外（含大陸）匯回資金。<br>
+                      2.	企業自境外（含大陸）匯回收益。
+                    </td>
+                  　</tr>
+                  <tr>
+                      　<td>匯回資金課稅</td>
+                      　<td>
+                          1.	申請核准制（稽徵機關）。<br>
+                          2.	銀行專戶管理。<br>
+                          3.	第一重優惠稅率：第一年8%，第二年10%。<br>
+                          4.	擇定後不得變更。<br>
+                          5.	逾二年匯回資金不適用。<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        　<td>資金管理運用</td>
+                        　<td>
+                            1.	「三可以一不」政策。<br>
+                            2.	可「從事規定產業投資」：最高100%，再享第二重退稅優惠<br>
+                              （1）	直接投資。<br>
+                              （2）	通過創投或私募資金方式投資。<br>
+                              （3）	退稅50%（實際稅率第一年4%，第二年5%）<br>
+                            3.	可「自由運用」：最高5%。不可購置不動產。<br>
+                            4.	可從「從事金融投資」：最高25%。包括債券、股票、基金、保險等產品。
+                          </td>
+                      </tr>
+                      <tr>
+                          　<td>鼓勵投資產業類別</td>
+                          　<td>
+                              1.	直接投資涵蓋農業、工業及服務業等各行業。<br>
+                              2.	間接投資事業包括智慧科技相關、重點製造業及服務業、發電業及天然氣、長照服務、文創事業等。<br>
+                            </td>
+                        </tr>
+                  </table>
+                  相關企業應把握時機有效利用此次專法賦予的兩年稅率優惠，解決企業海外資金運用問題。如企業主或是企業有資金調度回台投資的需求，特別是已經有明確的產業標的，可利用本專案進行配置已達到減稅目的，本公司可提供相關規劃及執行服務。
+            </div>
           </div>
         </section>
       </div>
@@ -28,27 +72,25 @@
   <!--顧問陣容-->
   <div class="news-layout">
     <div class="container">
-      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">{{'顧問陣容' | translate}}</h1>
+      <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">{{'FXL簡介' | translate}}</h1>
       <ul class="news-tabs">
-        <!--<li [ngClass]="{ active: tabIndex === 0 }" (click)="changeTab(0)">陣容履歷</li>
-        <li [ngClass]="{ active: tabIndex === 1 }" (click)="changeTab(1)">服務對象</li>-->
+      <li [ngClass]="{ active: tabIndex === 0 }" (click)="changeTab(0)">{{'顧問陣容' | translate}}</li>
+        <li [ngClass]="{ active: tabIndex === 1 }" (click)="changeTab(1)">{{'業務範圍' | translate}}</li>
       </ul>
-      <div class="activity-layout" *ngIf="tabIndex === 1">
-        <div class="activity-block">
-          <span class="title">我們的服務對象</span>
-          <span class="info">
-            <ol style="list-style-type:disc">
-              <li>▲ 準備設立公司者</li>
-              <li>▲ 經營管理者</li>
-              <li>▲ 有交易對象者</li>
-              <li>▲ 與政府部門交涉者</li>
-              <li>▲ 投資大陸及涉大陸法律事務</li>
-              <li>▲ 企業轉型</li>
-              <li>▲ 正臨各類營運疑難雜症者</li>
-            </ol>
-          </span>
+      <div class="busniess-layout" *ngIf="tabIndex ===1">
+          <div class="busniess-block">
+            <div class="cont-layout">
+              <section class="block animatedFadeInUp" animateOnScroll animationName="animated fadeInUp" *ngFor="let item of businessList">
+                <img src="{{item.icon}}">
+                <div class="content">
+                  <span class="title"> {{ item.title | translate }} </span>
+                  <span class="cont" style="color: #4c4c4c"> {{ item.info | translate }} </span>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
-      </div>
+      <!--顧問陣容-->
       <div class="role-layout" *ngIf="tabIndex === 0">
         <section class="role-block" *ngFor="let item of roleList">
           <div class="cont">
@@ -57,8 +99,10 @@
           </div>
         </section>
       </div>
+      <div class="role-layout" *ngIf="tabIndex === 0">
       <h1 class="animatedFadeInUp" animateOnScroll animationName="animated fadeInUp">{{'合作夥伴' | translate}}</h1>
       <ul class="news-tabs"></ul>
+    </div>
       <div class="role-layout" *ngIf="tabIndex === 0">
           <section class="role-block" *ngFor="let item of helpmateList">
             <div class="cont">

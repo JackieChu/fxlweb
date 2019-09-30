@@ -7,12 +7,15 @@
       <option value="zh">中文</option>
       <option value="en">英文</option>
     </select> -->
-    <button mat-button [matMenuTriggerFor]="menu">語系｜Languages</button>
+    <ul class="header-menu">
+    <li *ngFor="let item of menulist">
+      <!-- <span class="outline" *ngIf="item.url" [routerLink]="['/', item.url]">{{ item.name }}</span> -->
+      <span class="outline" [matMenuTriggerFor]="menu">{{ item.name }}</span>
+    </li>
+    </ul>
     <mat-menu #menu="matMenu">
       <button mat-menu-item *ngFor="let lang of langList" [value]="lang.value" (click)="selected(lang)">{{ lang.title }}</button>
     </mat-menu>
   </div>
-  <!-- <ul class="header-menu">
-    <li *ngFor="let item of menu">{{ item.name }}</li>
-  </ul> -->
+
 </div>
